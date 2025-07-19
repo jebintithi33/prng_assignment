@@ -9,6 +9,7 @@ All plots are saved as ".png" files.
 
 ## Uniformity Plot
 
+```python
 def custom_prng(seed, a=1103515245, c=12345, m=2**31, size=1000):
     numbers = []
     x = seed
@@ -16,7 +17,7 @@ def custom_prng(seed, a=1103515245, c=12345, m=2**31, size=1000):
         x = (a * x + c) % m
         numbers.append(x / m)  # Normalize to [0, 1)
     return numbers
-
+```
 
 Interpretation:
 If the PRNG is good, the histogram will be relatively flat — indicating a uniform distribution.
@@ -24,6 +25,7 @@ If the PRNG is good, the histogram will be relatively flat — indicating a unif
 
 ## Lag Plot (Dependency Check)
 
+```python
 import matplotlib.pyplot as plt
 import seaborn as sns
 from pandas.plotting import lag_plot
@@ -47,7 +49,7 @@ plt.xlabel("x[i]")
 plt.ylabel("x[i+1]")
 plt.grid(True)
 plt.show()
-
+```
 
 Interpretation:
 A truly random PRNG will show no clear pattern or clustering.
