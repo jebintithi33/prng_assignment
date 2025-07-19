@@ -62,6 +62,6 @@ If points form lines or shapes, the generator may be too predictable.
 
 ### How to Run:
 1. Open a file in google colab
-2. Copy paste the pyhton code to the file
+2. Copy paste the python code to the file
 3. Run all cells
 4. See the plots saved in the same directory
