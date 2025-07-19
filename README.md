@@ -57,7 +57,7 @@ If points form lines or shapes, the generator may be too predictable.
 
 ## Output Files
 
- "uniformity.png" → Shows distribution histogram
+ "uniformity.png" → Shows distribution histogram, 
  "dependency.png" → Shows correlation between successive numbers
 
 ##  How to Run
